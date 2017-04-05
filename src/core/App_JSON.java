@@ -16,7 +16,7 @@ public class App_JSON {
               DecimalFormat df = new DecimalFormat("####0.0");
               Double bmi = (double) (w / Math.pow(h, 2)) * 703;             // w / Math.pow(h, 2) * 703
               String result = df.format(bmi).toString();
-return "{\"calc\": {\"unit\": \"imperial\", \"height\": " + h + "\"weight\": " + w + "\"bmi\": " + result + "}}";
+return "{\"calc\": {\"unit\": \"imperial\", \"height\": " + h + ", " + "\"weight\": " + w + ", " + "\"bmi\": " + result + "}}";
 }
        
        @GET
@@ -28,6 +28,6 @@ return "{\"calc\": {\"unit\": \"imperial\", \"height\": " + h + "\"weight\": " +
               DecimalFormat df = new DecimalFormat("####0.0");
               Double bmi = (double) (((w / Math.pow(h, 2)) * 10000));
               String result = df.format(bmi).toString();
-return "{\"calc\": {\"unit\": \"metric\", \"height\": " + h + "\"weight\": " + w + "\"bmi\": " + result + "}}";
+return "{\"calc\": {\"unit\": \"metric\", \"height\": " + h + ", " + "\"weight\": " + w + ", " + "\"bmi\": " + result + "}}";
 }
                                                  }
